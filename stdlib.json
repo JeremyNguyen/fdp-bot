@@ -1,0 +1,94 @@
+{
+  "name": "biboundee/FDP-bot",
+  "timeout": 10000,
+  "connector": false,
+  "events": {
+    "functions/events/autocode/self/deployed.js": {
+      "name": "autocode.self.deployed"
+    },
+    "functions/events/discord/message/create.js": {
+      "name": "discord.message.create"
+    },
+    "functions/events/discord/command/clairons-ouverts.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "clairons-ouverts"
+      }
+    },
+    "functions/events/discord/command/addkeyword.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "addkeyword"
+      }
+    },
+    "functions/events/discord/command/clairons-fermes.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "clairons-fermes"
+      }
+    },
+    "functions/events/discord/command/addreplique.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "addreplique"
+      }
+    },
+    "functions/events/discord/command/taunt.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "taunt"
+      }
+    },
+    "functions/events/discord/command/fdp-help.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "fdp-help"
+      }
+    },
+    "functions/events/scheduler/refreshStorage.js": {
+      "name": "scheduler.xminutely",
+      "subtype": {
+        "frequency": "5 minutes"
+      }
+    },
+    "functions/events/discord/command/fdp-admin.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "fdp-admin"
+      }
+    },
+    "functions/events/discord/command/fdp-stats.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "fdp-stats"
+      }
+    },
+    "functions/events/scheduler/daily.js": {
+      "name": "scheduler.daily",
+      "subtype": {
+        "time": "00:00 (12:00am)",
+        "timezone": "Europe — Paris, FR (+01:00, +02:00 DST)"
+      }
+    },
+    "functions/events/discord/command/fdp-sarcasm.js": {
+      "name": "discord.command",
+      "subtype": {
+        "command": "fdp-sarcasm"
+      }
+    }
+  },
+  "env": [
+    {
+      "name": "BASE_ID",
+      "description": ""
+    },
+    {
+      "name": "GUILD_ID",
+      "description": ""
+    },
+    {
+      "name": "GENERAL_ID",
+      "description": ""
+    }
+  ]
+}

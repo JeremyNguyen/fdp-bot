@@ -1,0 +1,8 @@
+{
+  "name": "basic-discord-example",
+  "author": "biboundee",
+  "publish": false,
+  "dependencies": {
+    "lib": "latest"
+  }
+}
